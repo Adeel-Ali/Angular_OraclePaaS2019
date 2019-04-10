@@ -95,7 +95,7 @@ Import the reference to the generated SDK files inside your html file like:
 
     <!-- API Controllers -->
     <script src="scripts/APIMATICCalculatorLib/Controllers/BaseController.js"></script>
-    <script src="scripts/APIMATICCalculatorLib/Controllers/OracleCalculatorController.js"></script>
+    <script src="scripts/APIMATICCalculatorLib/Controllers/OraclePaasMallorcaCalculatorController.js"></script>
 
 
     <!-- Models -->
@@ -168,20 +168,20 @@ var app = angular.module('myApp', [APIMATICCalculatorLib]);
 
 ## <a name="list_of_controllers"></a>List of Controllers
 
-* [OracleCalculatorController](#oracle_calculator_controller)
+* [OraclePaasMallorcaCalculatorController](#oracle_paas_mallorca_calculator_controller)
 
-## <a name="oracle_calculator_controller"></a>![Class: ](https://apidocs.io/img/class.png ".OracleCalculatorController") OracleCalculatorController
+## <a name="oracle_paas_mallorca_calculator_controller"></a>![Class: ](https://apidocs.io/img/class.png ".OraclePaasMallorcaCalculatorController") OraclePaasMallorcaCalculatorController
 
 ### Get singleton instance
 
-The singleton instance of the ``` OracleCalculatorController ``` class can be accessed via Dependency Injection.
+The singleton instance of the ``` OraclePaasMallorcaCalculatorController ``` class can be accessed via Dependency Injection.
 
 ```js
-	app.controller("testController", function($scope, OracleCalculatorController){
+	app.controller("testController", function($scope, OraclePaasMallorcaCalculatorController){
 	});
 ```
 
-### <a name="get_calculate"></a>![Method: ](https://apidocs.io/img/method.png ".OracleCalculatorController.getCalculate") getCalculate
+### <a name="get_calculate"></a>![Method: ](https://apidocs.io/img/method.png ".OraclePaasMallorcaCalculatorController.getCalculate") getCalculate
 
 > Calculates the expression using the specified operation.
 
@@ -204,14 +204,14 @@ function getCalculate(input)
 ```javascript
 
 
-	app.controller("testController", function($scope, OracleCalculatorController){
+	app.controller("testController", function($scope, OraclePaasMallorcaCalculatorController){
         var input = [];
         input['operation'] = new OperationTypeEnum(MULTIPLY);
         input['x'] = 4;
         input['y'] = 5;
 
 
-		var result = OracleCalculatorController.getCalculate(input);
+		var result = OraclePaasMallorcaCalculatorController.getCalculate(input);
         //Function call returns a promise
         result.then(function(success){
 			//success case
