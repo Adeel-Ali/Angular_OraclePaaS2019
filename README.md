@@ -95,7 +95,7 @@ Import the reference to the generated SDK files inside your html file like:
 
     <!-- API Controllers -->
     <script src="scripts/APIMATICCalculatorLib/Controllers/BaseController.js"></script>
-    <script src="scripts/APIMATICCalculatorLib/Controllers/SimpleCalculatorController.js"></script>
+    <script src="scripts/APIMATICCalculatorLib/Controllers/Pass2019MallorcaCalculatorController.js"></script>
 
 
     <!-- Models -->
@@ -168,20 +168,20 @@ var app = angular.module('myApp', [APIMATICCalculatorLib]);
 
 ## <a name="list_of_controllers"></a>List of Controllers
 
-* [SimpleCalculatorController](#simple_calculator_controller)
+* [Pass2019MallorcaCalculatorController](#pass2019_mallorca_calculator_controller)
 
-## <a name="simple_calculator_controller"></a>![Class: ](https://apidocs.io/img/class.png ".SimpleCalculatorController") SimpleCalculatorController
+## <a name="pass2019_mallorca_calculator_controller"></a>![Class: ](https://apidocs.io/img/class.png ".Pass2019MallorcaCalculatorController") Pass2019MallorcaCalculatorController
 
 ### Get singleton instance
 
-The singleton instance of the ``` SimpleCalculatorController ``` class can be accessed via Dependency Injection.
+The singleton instance of the ``` Pass2019MallorcaCalculatorController ``` class can be accessed via Dependency Injection.
 
 ```js
-	app.controller("testController", function($scope, SimpleCalculatorController){
+	app.controller("testController", function($scope, Pass2019MallorcaCalculatorController){
 	});
 ```
 
-### <a name="get_calculate"></a>![Method: ](https://apidocs.io/img/method.png ".SimpleCalculatorController.getCalculate") getCalculate
+### <a name="get_calculate"></a>![Method: ](https://apidocs.io/img/method.png ".Pass2019MallorcaCalculatorController.getCalculate") getCalculate
 
 > Calculates the expression using the specified operation.
 
@@ -204,14 +204,14 @@ function getCalculate(input)
 ```javascript
 
 
-	app.controller("testController", function($scope, SimpleCalculatorController){
+	app.controller("testController", function($scope, Pass2019MallorcaCalculatorController){
         var input = [];
         input['operation'] = new OperationTypeEnum(MULTIPLY);
         input['x'] = 4;
         input['y'] = 5;
 
 
-		var result = SimpleCalculatorController.getCalculate(input);
+		var result = Pass2019MallorcaCalculatorController.getCalculate(input);
         //Function call returns a promise
         result.then(function(success){
 			//success case
