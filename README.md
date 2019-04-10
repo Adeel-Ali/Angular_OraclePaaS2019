@@ -95,7 +95,7 @@ Import the reference to the generated SDK files inside your html file like:
 
     <!-- API Controllers -->
     <script src="scripts/APIMATICCalculatorLib/Controllers/BaseController.js"></script>
-    <script src="scripts/APIMATICCalculatorLib/Controllers/MySimpleCalculatorController.js"></script>
+    <script src="scripts/APIMATICCalculatorLib/Controllers/SimpleCalculatorController.js"></script>
 
 
     <!-- Models -->
@@ -168,20 +168,20 @@ var app = angular.module('myApp', [APIMATICCalculatorLib]);
 
 ## <a name="list_of_controllers"></a>List of Controllers
 
-* [MySimpleCalculatorController](#my_simple_calculator_controller)
+* [SimpleCalculatorController](#simple_calculator_controller)
 
-## <a name="my_simple_calculator_controller"></a>![Class: ](https://apidocs.io/img/class.png ".MySimpleCalculatorController") MySimpleCalculatorController
+## <a name="simple_calculator_controller"></a>![Class: ](https://apidocs.io/img/class.png ".SimpleCalculatorController") SimpleCalculatorController
 
 ### Get singleton instance
 
-The singleton instance of the ``` MySimpleCalculatorController ``` class can be accessed via Dependency Injection.
+The singleton instance of the ``` SimpleCalculatorController ``` class can be accessed via Dependency Injection.
 
 ```js
-	app.controller("testController", function($scope, MySimpleCalculatorController){
+	app.controller("testController", function($scope, SimpleCalculatorController){
 	});
 ```
 
-### <a name="get_calculate"></a>![Method: ](https://apidocs.io/img/method.png ".MySimpleCalculatorController.getCalculate") getCalculate
+### <a name="get_calculate"></a>![Method: ](https://apidocs.io/img/method.png ".SimpleCalculatorController.getCalculate") getCalculate
 
 > Calculates the expression using the specified operation.
 
@@ -204,14 +204,14 @@ function getCalculate(input)
 ```javascript
 
 
-	app.controller("testController", function($scope, MySimpleCalculatorController){
+	app.controller("testController", function($scope, SimpleCalculatorController){
         var input = [];
         input['operation'] = new OperationTypeEnum(MULTIPLY);
         input['x'] = 4;
         input['y'] = 5;
 
 
-		var result = MySimpleCalculatorController.getCalculate(input);
+		var result = SimpleCalculatorController.getCalculate(input);
         //Function call returns a promise
         result.then(function(success){
 			//success case
